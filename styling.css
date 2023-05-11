@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: whitesmoke;
+}
+
+header {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  height: 10vh;
+  align-items: center;
+}
+
+.logo-container {
+  flex: 1;
+}
+
+nav {
+  flex: 2;
+}
+
+.cart {
+  flex: 1;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+
+.logo-container,
+.nav-links,
+.cart {
+  display: flex;
+}
+
+.logo {
+  margin: 13px;
+  font-size: 20px;
+}
+
+.nav-links {
+  justify-content: space-around;
+  list-style: none;
+}
+
+.nav-link {
+  font-size: 18px;
+}
+
+.link {
+  color: #5f5f79;
+  transition: ease 0.4s;
+  border-radius: 12%;
+  padding: 10px;
+}
+
+.link:hover {
+  background-color: #5f5f79;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+.presentation {
+  display: flex;
+  width: 90%;
+  min-height: 80vh;
+  margin: auto;
+  align-items: center;
+}
+
+.matebook {
+  height: auto;
+  width: auto;
+  max-width: 600px;
+  max-height: 500px;
+  filter:drop-shadow(0px 5px 3px black);
+  animation:drop 1.5s ease;
+
+}
+
+
+.cover-photo {
+  margin-left: 180px;
+  flex: 1;
+}
+
+.introduction {
+  flex: 1;
+}
+
+.intro-text h1 {
+  font-size: 44px;
+  font-weight: 500;
+  background: linear-gradient(to right, #494964, #6f6f89);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 50px;
+  
+}
+
+.intro-text p {
+  margin-top: 10px;
+  font-size: 20px;
+  color: #5d5c74;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+a h4 {
+  text-decoration: none;
+  border: none;
+  padding: 0;
+  color: black;
+}
+
+.buttons {
+  padding-top: 50px;
+  font-family: "Popins", sans-serif;
+}
+
+.cta-select {
+  border: 2px solid #c36cbb;
+  background: transparent;
+  color: #c36cbb;
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  margin-right: 7px;
+  transition: ease 0.5s;
+}
+
+.cta-select:hover {
+  background-color: #c36cbb;
+  color: white;
+}
+
+.price {
+  margin-top: 25px;
+  font-size: 18px;
+  justify-content: flex-start;
+}
+
+.shopping {
+  height: 5vh;
+}
+
+footer {
+  text-align: center;
+  color: gray;
+  opacity: 75%;
+  margin-top: 35px;
+  font-size: 15px;
+  padding: 0;
+}
+
+.footer {
+  font-weight: 550;
+}
+
+
+
+@keyframes drop{
+  0%{
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
